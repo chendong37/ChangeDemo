@@ -15,6 +15,7 @@
 </head>
 <body>
     <form id="Form1" runat="server">
+        <div>测试</div>
         <asp:LinkButton runat="server" OnClick="Unnamed2_Click" ID="btnToReg">注册</asp:LinkButton>
         <asp:LinkButton runat="server" OnClick="Unnamed1_Click" ID="btnToLog">登录</asp:LinkButton>
     </form>
