@@ -24,6 +24,8 @@
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
     <TargetFrameworkProfile />
+    <Use64BitIISExpress />
+    <UseGlobalApplicationHostFile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -78,13 +80,6 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Default.aspx.cs">
-      <SubType>ASPXCodeBehind</SubType>
-      <DependentUpon>Default.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Default.aspx.designer.cs">
-      <DependentUpon>Default.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Home.aspx.cs">
       <DependentUpon>Home.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -107,9 +102,6 @@
     <Compile Include="Register.aspx.designer.cs">
       <DependentUpon>Register.aspx</DependentUpon>
     </Compile>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Default.aspx" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\BLL\BLL.csproj">

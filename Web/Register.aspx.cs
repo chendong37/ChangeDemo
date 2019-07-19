@@ -9,6 +9,7 @@ using System.Data.SqlClient;
 using System.Drawing;
 using Change.Model;
 using Change.BLL;
+using Maticsoft.Common;
 
 namespace Change.Web
 {
@@ -160,7 +161,8 @@ namespace Change.Web
                 CustomValidator4.ErrorMessage = "*邮箱为空";
                 args.IsValid = false;
             }
-            else if (System.Text.RegularExpressions.Regex.IsMatch(rEmailText.Text, "(^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\\.[a-zA-Z0-9-.]+$)"))
+            
+            else if (PageValidate.IsEmail(rEmailText.Text))
             {
                 args.IsValid = true;
                 EmailIselgal = true;

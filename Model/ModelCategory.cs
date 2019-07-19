@@ -37,8 +37,17 @@ namespace Change.Model
 			set{ _parentid=value;}
 			get{return _parentid;}
 		}
-		#endregion Model
+        #endregion Model
 
-	}
+        /// <summary>
+        /// 覆写ToString方法
+        /// </summary>
+        /// <returns></returns>
+        public override string ToString()
+        {
+            return "Category [CateName=" + CateName + "]";
+        }
+
+    }
 }
 
