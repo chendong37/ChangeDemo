@@ -32,9 +32,9 @@ namespace Change.Web
             Response.Redirect("Login.aspx");
         }
         //待注册用户
-        ModelUsers registerUser = new ModelUsers();
+        UsersModel registerUser = new UsersModel();
         //业务逻辑
-        BllUsers userBll = new BllUsers();
+        UsersBll userBll = new UsersBll();
         protected void btnRegister_Click(object sender, EventArgs e)
         {
             if (!CheckBox1.Checked)

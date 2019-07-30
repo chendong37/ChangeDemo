@@ -132,20 +132,21 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DalAssemblyInfo.cs">
+    <Compile Include="AssemblyInfoDal.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="DalAdminUser.cs" />
-    <Compile Include="DalAppraise.cs" />
-    <Compile Include="DalCategory.cs" />
-    <Compile Include="DalDelivery.cs" />
-    <Compile Include="DalFavorite.cs" />
-    <Compile Include="DalNews.cs" />
-    <Compile Include="DalOrders.cs" />
-    <Compile Include="DalOrdersDetail.cs" />
-    <Compile Include="DalPhoto.cs" />
-    <Compile Include="DalProduct.cs" />
-    <Compile Include="DalUsers.cs" />
+    <Compile Include="AdminUserDal.cs" />
+    <Compile Include="AppraiseDal.cs" />
+    <Compile Include="CategoryDal.cs" />
+    <Compile Include="DeliveryDal.cs" />
+    <Compile Include="FavoriteDal.cs" />
+    <Compile Include="NewsDal.cs" />
+    <Compile Include="OrdersDal.cs" />
+    <Compile Include="OrdersDetailDal.cs" />
+    <Compile Include="PhotoDal.cs" />
+    <Compile Include="ProductDal.cs" />
+    <Compile Include="UsersDal.cs" />
+    <Compile Include="ProductBll.cs" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include="Microsoft.Net.Client.3.5">

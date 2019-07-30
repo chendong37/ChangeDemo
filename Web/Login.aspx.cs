@@ -26,8 +26,8 @@ namespace Change.Web
 
             try
             {
-                BllUsers userBll = new BllUsers();
-                ModelUsers loginUser = new ModelUsers();
+                UsersBll userBll = new UsersBll();
+                UsersModel loginUser = new UsersModel();
                 loginUser.UserName = TextBox1.Text;
                 loginUser.Pwd = TextBox2.Text;
                 loginUser = userBll.GetModelLogin(loginUser);
@@ -50,5 +50,6 @@ namespace Change.Web
             }
  
         }
+
     }
 }

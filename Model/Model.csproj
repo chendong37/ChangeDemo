@@ -114,20 +114,20 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ModelAssemblyInfo.cs">
+    <Compile Include="AssemblyInfoModel.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="ModelAdminUser.cs" />
-    <Compile Include="ModelAppraise.cs" />
-    <Compile Include="ModelCategory.cs" />
-    <Compile Include="ModelDelivery.cs" />
-    <Compile Include="ModelFavorite.cs" />
-    <Compile Include="ModelNews.cs" />
-    <Compile Include="ModelOrders.cs" />
-    <Compile Include="ModelOrdersDetail.cs" />
-    <Compile Include="ModelPhoto.cs" />
-    <Compile Include="ModelProduct.cs" />
-    <Compile Include="ModelUsers.cs" />
+    <Compile Include="AdminUserModel.cs" />
+    <Compile Include="AppraiseModel.cs" />
+    <Compile Include="CategoryModel.cs" />
+    <Compile Include="DeliveryModel.cs" />
+    <Compile Include="FavoriteModel.cs" />
+    <Compile Include="NewsModel.cs" />
+    <Compile Include="OrdersModel.cs" />
+    <Compile Include="OrdersDetailModel.cs" />
+    <Compile Include="PhotoModel.cs" />
+    <Compile Include="ProductModel.cs" />
+    <Compile Include="UsersModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include="Microsoft.Net.Client.3.5">

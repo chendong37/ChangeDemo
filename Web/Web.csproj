@@ -72,14 +72,239 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Admin\index.aspx" />
+    <Content Include="Admin\Login.aspx" />
+    <Content Include="Content\AD\ad-1.jpg" />
+    <Content Include="Content\AD\ad-2.jpg" />
+    <Content Include="Content\css\base.css" />
+    <Content Include="Content\css\common.css" />
+    <Content Include="Content\css\css.css" />
+    <Content Include="Content\css\jquery-labelauty.css" />
+    <Content Include="Content\css\style.css" />
+    <Content Include="Content\css\style1.css" />
+    <Content Include="Content\css\supplie.css" />
+    <Content Include="Content\css\user_style.css" />
     <Content Include="Home.aspx" />
+    <Content Include="Content\Images\01.jpg" />
+    <Content Include="Content\Images\01_mid.jpg" />
+    <Content Include="Content\Images\01_small.jpg" />
+    <Content Include="Content\Images\02.jpg" />
+    <Content Include="Content\Images\02_mid.jpg" />
+    <Content Include="Content\Images\02_small.jpg" />
+    <Content Include="Content\Images\03.jpg" />
+    <Content Include="Content\Images\03_mid.jpg" />
+    <Content Include="Content\Images\03_small.jpg" />
+    <Content Include="Content\Images\04.jpg" />
+    <Content Include="Content\Images\04_mid.jpg" />
+    <Content Include="Content\Images\04_small.jpg" />
+    <Content Include="Content\Images\Account-bg.png" />
+    <Content Include="Content\Images\AD_03.png" />
+    <Content Include="Content\Images\AD_04.png" />
+    <Content Include="Content\Images\AD_06.png" />
+    <Content Include="Content\Images\bg.gif" />
+    <Content Include="Content\Images\bg.png" />
+    <Content Include="Content\Images\bg_Filter.png" />
+    <Content Include="Content\Images\bk_img_11.png" />
+    <Content Include="Content\Images\bk_img_14.png" />
+    <Content Include="Content\Images\bk_img_19.png" />
+    <Content Include="Content\Images\bk_img_22.png" />
+    <Content Include="Content\Images\close.png" />
+    <Content Include="Content\Images\close2.png" />
+    <Content Include="Content\Images\commentstar.png" />
+    <Content Include="Content\Images\Complex_img.png" />
+    <Content Include="Content\Images\d_toux_img_03.png" />
+    <Content Include="Content\Images\fo-logo.jpg" />
+    <Content Include="Content\Images\h1.png" />
+    <Content Include="Content\Images\h2.png" />
+    <Content Include="Content\Images\h3.png" />
+    <Content Include="Content\Images\h4.png" />
+    <Content Include="Content\Images\h5.png" />
+    <Content Include="Content\Images\help_m_jia.gif" />
+    <Content Include="Content\Images\homecart.png" />
+    <Content Include="Content\Images\homecart_03.png" />
+    <Content Include="Content\Images\icon-copy.png" />
+    <Content Include="Content\Images\iconfont-liuyan-alt.png" />
+    <Content Include="Content\Images\iconfont-shoucang.png" />
+    <Content Include="Content\Images\iconfont-shoucang2.png" />
+    <Content Include="Content\Images\iconfont-xingxingkong.png" />
+    <Content Include="Content\Images\iconfont-xingxingkong_add.png" />
+    <Content Include="Content\Images\iconfont-xingxingman.png" />
+    <Content Include="Content\Images\iconfont-xingxingman_add.png" />
+    <Content Include="Content\Images\indexhead_sprite.png" />
+    <Content Include="Content\Images\input-checked.png" />
+    <Content Include="Content\Images\l-bg.png" />
+    <Content Include="Content\Images\loader.gif" />
+    <Content Include="Content\Images\login-pic.jpg" />
+    <Content Include="Content\Images\logo.png" />
+    <Content Include="Content\Images\l_03.png" />
+    <Content Include="Content\Images\l_06.png" />
+    <Content Include="Content\Images\map.png" />
+    <Content Include="Content\Images\MbrAtHLGP.png" />
+    <Content Include="Content\Images\muen_bg_03.png" />
+    <Content Include="Content\Images\m_i_1.png" />
+    <Content Include="Content\Images\m_i_2.png" />
+    <Content Include="Content\Images\m_i_3.png" />
+    <Content Include="Content\Images\m_i_4.png" />
+    <Content Include="Content\Images\new-pro.jpg" />
+    <Content Include="Content\Images\NTngAG7pl.png" />
+    <Content Include="Content\Images\NTo2Wh8TF.png" />
+    <Content Include="Content\Images\orange.png" />
+    <Content Include="Content\Images\people.png" />
+    <Content Include="Content\Images\pro-1.jpg" />
+    <Content Include="Content\Images\provider\chacha.png" />
+    <Content Include="Content\Images\provider\iconfont-jia.png" />
+    <Content Include="Content\Images\provider\jia.jpg" />
+    <Content Include="Content\Images\provider\jian.jpg" />
+    <Content Include="Content\Images\pro_V2_r17_c4.png" />
+    <Content Include="Content\Images\p_032.jpg" />
+    <Content Include="Content\Images\qd.jpg" />
+    <Content Include="Content\Images\search.ele.png" />
+    <Content Include="Content\Images\Search_img.png" />
+    <Content Include="Content\Images\Service3-1.png" />
+    <Content Include="Content\Images\settleup-nogoods.png" />
+    <Content Include="Content\Images\shop_logo.jpg" />
+    <Content Include="Content\Images\slider-arrow.png" />
+    <Content Include="Content\Images\TB27.gif" />
+    <Content Include="Content\Images\user_img_03.png" />
+    <Content Include="Content\Images\user_img_04.png" />
+    <Content Include="Content\Images\user_img_05.png" />
+    <Content Include="Content\Images\user_img_06.png" />
+    <Content Include="Content\Images\user_img_07.png" />
+    <Content Include="Content\Images\user_img_08.png" />
+    <Content Include="Content\Images\zfb.jpg" />
+    <Content Include="Content\Images\zhifu1_07.png" />
+    <Content Include="Content\Images\zhifu1_10.png" />
+    <Content Include="Content\Images\zhifu1_12.png" />
+    <Content Include="Content\js\accordion.js" />
+    <Content Include="Content\js\common_js.js" />
+    <Content Include="Content\js\custom.js" />
+    <Content Include="Content\js\footer.js" />
+    <Content Include="Content\js\icheck.js" />
+    <Content Include="Content\js\jquery-1.8.3.min.js" />
+    <Content Include="Content\js\jquery-2.1.1.min.js" />
+    <Content Include="Content\js\jquery-labelauty.js" />
+    <Content Include="Content\js\jquery.imagezoom.min.js" />
+    <Content Include="Content\js\jquery.simpleGal.js" />
+    <Content Include="Content\js\jquery.SuperSlide.2.1.1.js" />
+    <Content Include="Content\js\lrtk.js" />
+    <Content Include="Content\layer\extend\layer.ext.js" />
+    <Content Include="Content\layer\layer.js" />
+    <Content Include="Content\layer\skin\default\icon-ext.png" />
+    <Content Include="Content\layer\skin\default\icon.png" />
+    <Content Include="Content\layer\skin\default\loading-0.gif" />
+    <Content Include="Content\layer\skin\default\loading-1.gif" />
+    <Content Include="Content\layer\skin\default\loading-2.gif" />
+    <Content Include="Content\layer\skin\layer.css" />
+    <Content Include="Content\layer\skin\layer.ext.css" />
     <Content Include="Login.aspx" />
+    <Content Include="Content\Plugins\laydate\laydate.js" />
+    <Content Include="Content\Plugins\laydate\need\laydate.css" />
+    <Content Include="Content\Plugins\laydate\skins\dahong\icon.png" />
+    <Content Include="Content\Plugins\laydate\skins\dahong\laydate.css" />
+    <Content Include="Content\Plugins\laydate\skins\default\icon.png" />
+    <Content Include="Content\Plugins\laydate\skins\default\laydate.css" />
+    <Content Include="Content\Plugins\laydate\skins\molv\icon.png" />
+    <Content Include="Content\Plugins\laydate\skins\molv\laydate.css" />
+    <Content Include="Content\products\cp.jpg" />
+    <Content Include="Content\products\logo\1089.jpg" />
+    <Content Include="Content\products\logo\1145.jpg" />
+    <Content Include="Content\products\logo\1208.jpg" />
+    <Content Include="Content\products\logo\1252.jpg" />
+    <Content Include="Content\products\logo\1270.jpg" />
+    <Content Include="Content\products\logo\1309.jpg" />
+    <Content Include="Content\products\logo\1396.jpg" />
+    <Content Include="Content\products\logo\152.jpg" />
+    <Content Include="Content\products\logo\156.jpg" />
+    <Content Include="Content\products\logo\1663.jpg" />
+    <Content Include="Content\products\logo\199.jpg" />
+    <Content Include="Content\products\logo\245.jpg" />
+    <Content Include="Content\products\logo\339.jpg" />
+    <Content Include="Content\products\logo\34.jpg" />
+    <Content Include="Content\products\logo\42.jpg" />
+    <Content Include="Content\products\logo\458.jpg" />
+    <Content Include="Content\products\logo\6116.jpg" />
+    <Content Include="Content\products\logo\618.jpg" />
+    <Content Include="Content\products\logo\644.jpg" />
+    <Content Include="Content\products\logo\690.jpg" />
+    <Content Include="Content\products\logo\740.jpg" />
+    <Content Include="Content\products\logo\741.png" />
+    <Content Include="Content\products\logo\logo.jpg" />
+    <Content Include="Content\products\logo\logo1.jpg" />
+    <Content Include="Content\products\logo\logo2.jpg" />
+    <Content Include="Content\products\p_1.jpg" />
+    <Content Include="Content\products\p_11.jpg" />
+    <Content Include="Content\products\p_12.jpg" />
+    <Content Include="Content\products\p_13.jpg" />
+    <Content Include="Content\products\p_15.jpg" />
+    <Content Include="Content\products\p_16.jpg" />
+    <Content Include="Content\products\p_17.jpg" />
+    <Content Include="Content\products\p_18.jpg" />
+    <Content Include="Content\products\p_19.jpg" />
+    <Content Include="Content\products\p_2.jpg" />
+    <Content Include="Content\products\p_21.jpg" />
+    <Content Include="Content\products\p_22.jpg" />
+    <Content Include="Content\products\p_23.jpg" />
+    <Content Include="Content\products\p_24.jpg" />
+    <Content Include="Content\products\p_25.jpg" />
+    <Content Include="Content\products\p_29.jpg" />
+    <Content Include="Content\products\p_3.jpg" />
+    <Content Include="Content\products\p_31.jpg" />
+    <Content Include="Content\products\p_32.jpg" />
+    <Content Include="Content\products\p_33.jpg" />
+    <Content Include="Content\products\p_34.jpg" />
+    <Content Include="Content\products\p_36.jpg" />
+    <Content Include="Content\products\p_37.jpg" />
+    <Content Include="Content\products\p_39.jpg" />
+    <Content Include="Content\products\p_4.jpg" />
+    <Content Include="Content\products\p_40.jpg" />
+    <Content Include="Content\products\p_41.jpg" />
+    <Content Include="Content\products\p_42.jpg" />
+    <Content Include="Content\products\p_43.jpg" />
+    <Content Include="Content\products\p_44.jpg" />
+    <Content Include="Content\products\p_45.jpg" />
+    <Content Include="Content\products\p_46.jpg" />
+    <Content Include="Content\products\p_47.jpg" />
+    <Content Include="Content\products\p_5.jpg" />
+    <Content Include="Content\products\p_50.jpg" />
+    <Content Include="Content\products\p_51.jpg" />
+    <Content Include="Content\products\p_52.jpg" />
+    <Content Include="Content\products\p_53.jpg" />
+    <Content Include="Content\products\p_54.jpg" />
+    <Content Include="Content\products\p_55.jpg" />
+    <Content Include="Content\products\p_56.jpg" />
+    <Content Include="Content\products\p_57.jpg" />
+    <Content Include="Content\products\p_58.jpg" />
+    <Content Include="Content\products\p_6.jpg" />
+    <Content Include="Content\products\p_65.jpg" />
+    <Content Include="Content\products\p_67.jpg" />
+    <Content Include="Content\products\p_68.jpg" />
+    <Content Include="Content\products\p_7.jpg" />
+    <Content Include="Content\products\p_8.jpg" />
+    <Content Include="Content\products\p_9.jpg" />
     <Content Include="Register.aspx" />
+    <Content Include="Content\skins\all.css" />
+    <Content Include="Content\skins\flat\green.css" />
+    <Content Include="Content\skins\flat\green.png" />
+    <Content Include="Content\skins\flat\_all.css" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Admin\index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Home.aspx.cs">
       <DependentUpon>Home.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -113,12 +338,7 @@
       <Name>Model</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Admin\" />
-    <Folder Include="css\" />
-    <Folder Include="Images\" />
-    <Folder Include="js\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

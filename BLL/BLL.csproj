@@ -115,20 +115,20 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BllAssemblyInfo.cs">
+    <Compile Include="AssemblyInfoBll.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="BllAdminUser.cs" />
-    <Compile Include="BllAppraise.cs" />
-    <Compile Include="BllCategory.cs" />
-    <Compile Include="BllDelivery.cs" />
-    <Compile Include="BllFavorite.cs" />
-    <Compile Include="BllNews.cs" />
-    <Compile Include="BllOrders.cs" />
-    <Compile Include="BllOrdersDetail.cs" />
-    <Compile Include="BllPhoto.cs" />
-    <Compile Include="BllProduct.cs" />
-    <Compile Include="BllUsers.cs" />
+    <Compile Include="AdminUserBll.cs" />
+    <Compile Include="AppraiseBll.cs" />
+    <Compile Include="CategoryBll.cs" />
+    <Compile Include="DeliveryBll.cs" />
+    <Compile Include="FavoriteBll.cs" />
+    <Compile Include="NewsBll.cs" />
+    <Compile Include="OrdersBll.cs" />
+    <Compile Include="OrdersDetailBll.cs" />
+    <Compile Include="PhotoBll.cs" />
+    <Compile Include="ProductBll.cs" />
+    <Compile Include="UsersBll.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DAL\DAL.csproj">
