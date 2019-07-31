@@ -30,7 +30,7 @@ namespace Change.Web.Admin
                     {
                         UserCustomValidator.IsValid = true;
                         Session["CurrentAdminUser"] = loginAdminUser;
-                        Response.Redirect("./index.aspx");
+                        Response.Redirect("News.aspx");
                     }
                     else
                     {

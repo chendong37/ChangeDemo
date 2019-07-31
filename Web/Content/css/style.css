@@ -1,4 +1,4 @@
-@charset "utf-8";
+﻿@charset "utf-8";
 /*****************菜单列表样式*****************/
 #allSortOuterbox {
 	position: relative;
@@ -585,7 +585,7 @@
 .Inside_pages .right_style .content_style .Add_shop_style{ padding:10px; margin:15px 0px; border:1px solid #ddd;}
 .Inside_pages .right_style .content_style .Add_shop_style .New_Shop_btn{ height:30px; width:80px; line-height:30px; font-size:14px;text-align:center;display:block; color:#666; border:1px solid #ddd;}
 .Inside_pages .left_style{ width:180px; float:left; margin-top:20px; margin-right:20px;}
-.Inside_pages .right_style{ width:1000px; float:left; margin-top:20px;}
+.Inside_pages .right_style{ width:1200px; float:left; margin-top:20px;}
 .Inside_pages .right_style .content_style{ margin-bottom:50px;}
 .Inside_pages .left_style .menu_style{ border:1px solid #ddd;}
 .Inside_pages .left_style .menu_style li{ border-bottom:1px dashed #ddd; height:40px; line-height:40px; font-size:16px}

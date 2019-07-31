@@ -6,16 +6,19 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace Change.Web.Admin
+namespace Change.Web.Masters
 {
-    public partial class index : System.Web.UI.Page
+    public partial class AdminMasterPag : System.Web.UI.MasterPage
     {
         protected void Page_Load(object sender, EventArgs e)
         {
             if (Session["CurrentAdminUser"] != null)
-                aUserInfo.Text = (Session["CurrentAdminUser"] as AdminUserModel).UserName;
+            {
+                adminUserName.Text = (Session["CurrentAdminUser"] as AdminUserModel).UserName;
+            }
             else
-                Response.Redirect("Login.aspx");
+                Response.Redirect("~/admin/Login.aspx");
         }
+       
     }
 }
