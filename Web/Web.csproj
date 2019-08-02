@@ -58,6 +58,9 @@
       <HintPath>..\Lib\LTP.Accounts.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.9.0.1\lib\net35\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -72,8 +75,12 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Admin\AddNews.aspx" />
+    <Content Include="Admin\DeleteNews.aspx" />
     <Content Include="Admin\Login.aspx" />
     <Content Include="Admin\Category.aspx" />
+    <Content Include="Admin\ModifyNews.aspx" />
+    <Content Include="Admin\NewsDetails.aspx" />
     <Content Include="Admin\Product.aspx" />
     <Content Include="Admin\Orders.aspx" />
     <Content Include="Admin\Users.aspx" />
@@ -88,6 +95,104 @@
     <Content Include="Content\css\style1.css" />
     <Content Include="Content\css\supplie.css" />
     <Content Include="Content\css\user_style.css" />
+    <Content Include="Content\wangEditor-3.1.1\.gitattributes" />
+    <Content Include="Content\wangEditor-3.1.1\.gitignore" />
+    <Content Include="Content\wangEditor-3.1.1\example\demo\in-react\public\favicon.ico" />
+    <Content Include="Content\wangEditor-3.1.1\example\demo\in-react\public\index.html" />
+    <Content Include="Content\wangEditor-3.1.1\example\demo\in-react\src\App.css" />
+    <Content Include="Content\wangEditor-3.1.1\example\demo\in-react\src\App.js" />
+    <Content Include="Content\wangEditor-3.1.1\example\demo\in-react\src\App.test.js" />
+    <Content Include="Content\wangEditor-3.1.1\example\demo\in-react\src\index.css" />
+    <Content Include="Content\wangEditor-3.1.1\example\demo\in-react\src\index.js" />
+    <Content Include="Content\wangEditor-3.1.1\example\demo\in-react\src\logo.svg" />
+    <Content Include="Content\wangEditor-3.1.1\example\demo\in-react\src\registerServiceWorker.js" />
+    <Content Include="Content\wangEditor-3.1.1\example\demo\in-vue\.postcssrc.js" />
+    <Content Include="Content\wangEditor-3.1.1\example\demo\in-vue\build\build.js" />
+    <Content Include="Content\wangEditor-3.1.1\example\demo\in-vue\build\check-versions.js" />
+    <Content Include="Content\wangEditor-3.1.1\example\demo\in-vue\build\dev-client.js" />
+    <Content Include="Content\wangEditor-3.1.1\example\demo\in-vue\build\dev-server.js" />
+    <Content Include="Content\wangEditor-3.1.1\example\demo\in-vue\build\utils.js" />
+    <Content Include="Content\wangEditor-3.1.1\example\demo\in-vue\build\vue-loader.conf.js" />
+    <Content Include="Content\wangEditor-3.1.1\example\demo\in-vue\build\webpack.base.conf.js" />
+    <Content Include="Content\wangEditor-3.1.1\example\demo\in-vue\build\webpack.dev.conf.js" />
+    <Content Include="Content\wangEditor-3.1.1\example\demo\in-vue\build\webpack.prod.conf.js" />
+    <Content Include="Content\wangEditor-3.1.1\example\demo\in-vue\config\dev.env.js" />
+    <Content Include="Content\wangEditor-3.1.1\example\demo\in-vue\config\index.js" />
+    <Content Include="Content\wangEditor-3.1.1\example\demo\in-vue\config\prod.env.js" />
+    <Content Include="Content\wangEditor-3.1.1\example\demo\in-vue\index.html" />
+    <Content Include="Content\wangEditor-3.1.1\example\demo\in-vue\src\assets\logo.png" />
+    <Content Include="Content\wangEditor-3.1.1\example\demo\in-vue\src\main.js" />
+    <Content Include="Content\wangEditor-3.1.1\example\demo\test-amd-main.js" />
+    <Content Include="Content\wangEditor-3.1.1\example\demo\test-amd.html" />
+    <Content Include="Content\wangEditor-3.1.1\example\demo\test-css-reset.html" />
+    <Content Include="Content\wangEditor-3.1.1\example\demo\test-emot.html" />
+    <Content Include="Content\wangEditor-3.1.1\example\demo\test-fullscreen.html" />
+    <Content Include="Content\wangEditor-3.1.1\example\demo\test-get-content.html" />
+    <Content Include="Content\wangEditor-3.1.1\example\demo\test-getJSON.html" />
+    <Content Include="Content\wangEditor-3.1.1\example\demo\test-lang.html" />
+    <Content Include="Content\wangEditor-3.1.1\example\demo\test-menus.html" />
+    <Content Include="Content\wangEditor-3.1.1\example\demo\test-mult.html" />
+    <Content Include="Content\wangEditor-3.1.1\example\demo\test-onblur.html" />
+    <Content Include="Content\wangEditor-3.1.1\example\demo\test-onchange.html" />
+    <Content Include="Content\wangEditor-3.1.1\example\demo\test-onfocus.html" />
+    <Content Include="Content\wangEditor-3.1.1\example\demo\test-paste.html" />
+    <Content Include="Content\wangEditor-3.1.1\example\demo\test-set-content.html" />
+    <Content Include="Content\wangEditor-3.1.1\example\demo\test-sperate.html" />
+    <Content Include="Content\wangEditor-3.1.1\example\demo\test-textarea.html" />
+    <Content Include="Content\wangEditor-3.1.1\example\demo\test-uploadimg.html" />
+    <Content Include="Content\wangEditor-3.1.1\example\favicon.ico" />
+    <Content Include="Content\wangEditor-3.1.1\example\icomoon\demo-files\demo.css" />
+    <Content Include="Content\wangEditor-3.1.1\example\icomoon\demo-files\demo.js" />
+    <Content Include="Content\wangEditor-3.1.1\example\icomoon\demo.html" />
+    <Content Include="Content\wangEditor-3.1.1\example\icomoon\fonts\icomoon.svg" />
+    <Content Include="Content\wangEditor-3.1.1\example\icomoon\Read Me.txt" />
+    <Content Include="Content\wangEditor-3.1.1\example\icomoon\style.css" />
+    <Content Include="Content\wangEditor-3.1.1\example\index.html" />
+    <Content Include="Content\wangEditor-3.1.1\example\pay.png" />
+    <Content Include="Content\wangEditor-3.1.1\example\server\index.js" />
+    <Content Include="Content\wangEditor-3.1.1\example\server\util.js" />
+    <Content Include="Content\wangEditor-3.1.1\gulpfile.js" />
+    <Content Include="Content\wangEditor-3.1.1\release\wangEditor.css" />
+    <Content Include="Content\wangEditor-3.1.1\release\wangEditor.js" />
+    <Content Include="Content\wangEditor-3.1.1\release\wangEditor.min.css" />
+    <Content Include="Content\wangEditor-3.1.1\release\wangEditor.min.js" />
+    <Content Include="Content\wangEditor-3.1.1\src\js\command\index.js" />
+    <Content Include="Content\wangEditor-3.1.1\src\js\config.js" />
+    <Content Include="Content\wangEditor-3.1.1\src\js\editor\index.js" />
+    <Content Include="Content\wangEditor-3.1.1\src\js\editor\upload\progress.js" />
+    <Content Include="Content\wangEditor-3.1.1\src\js\editor\upload\upload-img.js" />
+    <Content Include="Content\wangEditor-3.1.1\src\js\index.js" />
+    <Content Include="Content\wangEditor-3.1.1\src\js\menus\backColor\index.js" />
+    <Content Include="Content\wangEditor-3.1.1\src\js\menus\bold\index.js" />
+    <Content Include="Content\wangEditor-3.1.1\src\js\menus\code\index.js" />
+    <Content Include="Content\wangEditor-3.1.1\src\js\menus\droplist.js" />
+    <Content Include="Content\wangEditor-3.1.1\src\js\menus\emoticon\index.js" />
+    <Content Include="Content\wangEditor-3.1.1\src\js\menus\fontName\index.js" />
+    <Content Include="Content\wangEditor-3.1.1\src\js\menus\fontSize\index.js" />
+    <Content Include="Content\wangEditor-3.1.1\src\js\menus\foreColor\index.js" />
+    <Content Include="Content\wangEditor-3.1.1\src\js\menus\head\index.js" />
+    <Content Include="Content\wangEditor-3.1.1\src\js\menus\img\index.js" />
+    <Content Include="Content\wangEditor-3.1.1\src\js\menus\index.js" />
+    <Content Include="Content\wangEditor-3.1.1\src\js\menus\italic\index.js" />
+    <Content Include="Content\wangEditor-3.1.1\src\js\menus\justify\index.js" />
+    <Content Include="Content\wangEditor-3.1.1\src\js\menus\link\index.js" />
+    <Content Include="Content\wangEditor-3.1.1\src\js\menus\list\index.js" />
+    <Content Include="Content\wangEditor-3.1.1\src\js\menus\menu-list.js" />
+    <Content Include="Content\wangEditor-3.1.1\src\js\menus\panel.js" />
+    <Content Include="Content\wangEditor-3.1.1\src\js\menus\quote\index.js" />
+    <Content Include="Content\wangEditor-3.1.1\src\js\menus\redo\index.js" />
+    <Content Include="Content\wangEditor-3.1.1\src\js\menus\strikethrough\index.js" />
+    <Content Include="Content\wangEditor-3.1.1\src\js\menus\table\index.js" />
+    <Content Include="Content\wangEditor-3.1.1\src\js\menus\underline\index.js" />
+    <Content Include="Content\wangEditor-3.1.1\src\js\menus\undo\index.js" />
+    <Content Include="Content\wangEditor-3.1.1\src\js\menus\video\index.js" />
+    <Content Include="Content\wangEditor-3.1.1\src\js\selection\index.js" />
+    <Content Include="Content\wangEditor-3.1.1\src\js\text\index.js" />
+    <Content Include="Content\wangEditor-3.1.1\src\js\util\dom-core.js" />
+    <Content Include="Content\wangEditor-3.1.1\src\js\util\paste-handle.js" />
+    <Content Include="Content\wangEditor-3.1.1\src\js\util\poly-fill.js" />
+    <Content Include="Content\wangEditor-3.1.1\src\js\util\replace-lang.js" />
+    <Content Include="Content\wangEditor-3.1.1\src\js\util\util.js" />
     <Content Include="Home.aspx" />
     <Content Include="Content\Images\01.jpg" />
     <Content Include="Content\Images\01_mid.jpg" />
@@ -295,6 +400,20 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Admin\AddNews.aspx.cs">
+      <DependentUpon>AddNews.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AddNews.aspx.designer.cs">
+      <DependentUpon>AddNews.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\DeleteNews.aspx.cs">
+      <DependentUpon>DeleteNews.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\DeleteNews.aspx.designer.cs">
+      <DependentUpon>DeleteNews.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Admin\Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -308,6 +427,20 @@
     </Compile>
     <Compile Include="Admin\Category.aspx.designer.cs">
       <DependentUpon>Category.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ModifyNews.aspx.cs">
+      <DependentUpon>ModifyNews.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ModifyNews.aspx.designer.cs">
+      <DependentUpon>ModifyNews.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\NewsDetails.aspx.cs">
+      <DependentUpon>NewsDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\NewsDetails.aspx.designer.cs">
+      <DependentUpon>NewsDetails.aspx</DependentUpon>
     </Compile>
     <Compile Include="Admin\Product.aspx.cs">
       <DependentUpon>Product.aspx</DependentUpon>
@@ -373,6 +506,12 @@
     <Compile Include="Register.aspx.designer.cs">
       <DependentUpon>Register.aspx</DependentUpon>
     </Compile>
+    <Compile Include="up.aspx.cs">
+      <DependentUpon>up.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="up.aspx.designer.cs">
+      <DependentUpon>up.aspx.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\BLL\BLL.csproj">
@@ -389,6 +528,85 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Masters\AdminMasterPag.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\wangEditor-3.1.1\.eslintignore" />
+    <Content Include="Content\wangEditor-3.1.1\.eslintrc.json" />
+    <Content Include="Content\wangEditor-3.1.1\.npmignore" />
+    <Content Include="Content\wangEditor-3.1.1\bower.json" />
+    <Content Include="Content\wangEditor-3.1.1\docs\dev\README.md" />
+    <Content Include="Content\wangEditor-3.1.1\docs\usage\01-getstart\01-demo.md" />
+    <Content Include="Content\wangEditor-3.1.1\docs\usage\01-getstart\02-use-module.md" />
+    <Content Include="Content\wangEditor-3.1.1\docs\usage\01-getstart\03-sperate.md" />
+    <Content Include="Content\wangEditor-3.1.1\docs\usage\01-getstart\04-multi.md" />
+    <Content Include="Content\wangEditor-3.1.1\docs\usage\02-content\01-set-content.md" />
+    <Content Include="Content\wangEditor-3.1.1\docs\usage\02-content\02-get-content.md" />
+    <Content Include="Content\wangEditor-3.1.1\docs\usage\02-content\03-use-textarea.md" />
+    <Content Include="Content\wangEditor-3.1.1\docs\usage\02-content\04-get-json.md" />
+    <Content Include="Content\wangEditor-3.1.1\docs\usage\03-config\01-menu.md" />
+    <Content Include="Content\wangEditor-3.1.1\docs\usage\03-config\02-debug.md" />
+    <Content Include="Content\wangEditor-3.1.1\docs\usage\03-config\03-onchange.md" />
+    <Content Include="Content\wangEditor-3.1.1\docs\usage\03-config\04-z-index.md" />
+    <Content Include="Content\wangEditor-3.1.1\docs\usage\03-config\05-lang.md" />
+    <Content Include="Content\wangEditor-3.1.1\docs\usage\03-config\06-paste.md" />
+    <Content Include="Content\wangEditor-3.1.1\docs\usage\03-config\07-linkImgCallback.md" />
+    <Content Include="Content\wangEditor-3.1.1\docs\usage\03-config\08-linkCheck.md" />
+    <Content Include="Content\wangEditor-3.1.1\docs\usage\03-config\09-onfocus.md" />
+    <Content Include="Content\wangEditor-3.1.1\docs\usage\03-config\10-onblur.md" />
+    <Content Include="Content\wangEditor-3.1.1\docs\usage\03-config\11-linkImgCheck.md" />
+    <Content Include="Content\wangEditor-3.1.1\docs\usage\03-config\12-colors.md" />
+    <Content Include="Content\wangEditor-3.1.1\docs\usage\03-config\13-emot.md" />
+    <Content Include="Content\wangEditor-3.1.1\docs\usage\03-config\14-font-name.md" />
+    <Content Include="Content\wangEditor-3.1.1\docs\usage\04-uploadimg\01-show-tab.md" />
+    <Content Include="Content\wangEditor-3.1.1\docs\usage\04-uploadimg\02-base64.md" />
+    <Content Include="Content\wangEditor-3.1.1\docs\usage\04-uploadimg\03-upload-config.md" />
+    <Content Include="Content\wangEditor-3.1.1\docs\usage\04-uploadimg\04-qiniu.md" />
+    <Content Include="Content\wangEditor-3.1.1\docs\usage\05-other\01-全屏-预览-查看源码.md" />
+    <Content Include="Content\wangEditor-3.1.1\docs\usage\05-other\02-上传附件.md" />
+    <Content Include="Content\wangEditor-3.1.1\docs\usage\05-other\03-markdown.md" />
+    <Content Include="Content\wangEditor-3.1.1\docs\usage\05-other\04-xss.md" />
+    <Content Include="Content\wangEditor-3.1.1\docs\usage\05-other\05-react.md" />
+    <Content Include="Content\wangEditor-3.1.1\docs\usage\05-other\06-vue.md" />
+    <Content Include="Content\wangEditor-3.1.1\docs\usage\05-other\07-ng.md" />
+    <Content Include="Content\wangEditor-3.1.1\docs\usage\05-other\08-api.md" />
+    <Content Include="Content\wangEditor-3.1.1\docs\usage\README.md" />
+    <Content Include="Content\wangEditor-3.1.1\example\demo\in-react\package.json" />
+    <Content Include="Content\wangEditor-3.1.1\example\demo\in-react\public\manifest.json" />
+    <Content Include="Content\wangEditor-3.1.1\example\demo\in-vue\.babelrc" />
+    <Content Include="Content\wangEditor-3.1.1\example\demo\in-vue\.editorconfig" />
+    <Content Include="Content\wangEditor-3.1.1\example\demo\in-vue\package.json" />
+    <Content Include="Content\wangEditor-3.1.1\example\demo\in-vue\src\App.vue" />
+    <Content Include="Content\wangEditor-3.1.1\example\demo\in-vue\src\components\Editor.vue" />
+    <Content Include="Content\wangEditor-3.1.1\example\demo\in-vue\src\components\Hello.vue" />
+    <Content Include="Content\wangEditor-3.1.1\example\demo\in-vue\static\.gitkeep" />
+    <Content Include="Content\wangEditor-3.1.1\example\icomoon\fonts\icomoon.eot" />
+    <Content Include="Content\wangEditor-3.1.1\example\icomoon\fonts\icomoon.ttf" />
+    <Content Include="Content\wangEditor-3.1.1\example\icomoon\fonts\icomoon.woff" />
+    <Content Include="Content\wangEditor-3.1.1\example\icomoon\selection.json" />
+    <Content Include="Content\wangEditor-3.1.1\example\README.md" />
+    <Content Include="Content\wangEditor-3.1.1\ISSUE.md" />
+    <Content Include="Content\wangEditor-3.1.1\LICENSE" />
+    <Content Include="Content\wangEditor-3.1.1\package.json" />
+    <Content Include="Content\wangEditor-3.1.1\README.md" />
+    <Content Include="Content\wangEditor-3.1.1\release\fonts\w-e-icon.woff" />
+    <Content Include="Content\wangEditor-3.1.1\release\wangEditor.min.js.map" />
+    <Content Include="Content\wangEditor-3.1.1\src\fonts\w-e-icon.woff" />
+    <Content Include="Content\wangEditor-3.1.1\src\js\.babelrc" />
+    <Content Include="Content\wangEditor-3.1.1\src\less\common.less" />
+    <Content Include="Content\wangEditor-3.1.1\src\less\droplist.less" />
+    <Content Include="Content\wangEditor-3.1.1\src\less\icon.less" />
+    <Content Include="Content\wangEditor-3.1.1\src\less\menus.less" />
+    <Content Include="Content\wangEditor-3.1.1\src\less\panel.less" />
+    <Content Include="Content\wangEditor-3.1.1\src\less\text.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="UploadFiles\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="up.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -19,6 +19,14 @@ namespace Change.Web.Masters
             else
                 Response.Redirect("~/admin/Login.aspx");
         }
-       
+
+        protected void Timer1_Tick(object sender, EventArgs e)
+        {
+            this.LabelClock.Text = new DateTime().ToLongTimeString();
+            this.LabelClock.Text = DateTime.Now.ToString("T");
+            this.LabelClock.ToolTip = DateTime.Today.ToString("yyyy-MM-dd  HH:mm:ss");
+
+
+        }
     }
 }

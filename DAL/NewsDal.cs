@@ -115,11 +115,40 @@ namespace Change.DAL
 				return false;
 			}
 		}
+        /// <summary>
+        /// 更新状态
+        /// </summary>
+        /// <param name="newsId"></param>
+        /// <param name="status"></param>
+        /// <returns></returns>
+        public bool UpdateNewsStatus(int newsId, int status)
+        {
+            StringBuilder strSql = new StringBuilder();
+            strSql.Append("update tb_News");
+            strSql.Append(" set States=@Status");
+            strSql.Append(" where NewsID=@NewsID");
+            SqlParameter[] parameters = {
+                    new SqlParameter("@NewsID", SqlDbType.Int,4),
+                    new SqlParameter("@Status", SqlDbType.Int,4)
+            };
+            parameters[0].Value = newsId;
+            parameters[1].Value = status;
 
-		/// <summary>
-		/// 删除一条数据
-		/// </summary>
-		public bool Delete(int NewsID)
+            int rows = DbHelperSQL.ExecuteSql(strSql.ToString(), parameters);
+            if (rows > 0)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+        /// <summary>
+        /// 删除一条数据
+        /// </summary>
+        public bool Delete(int NewsID)
 		{
 			
 			StringBuilder strSql=new StringBuilder();
@@ -310,7 +339,7 @@ namespace Change.DAL
 			return DbHelperSQL.Query(strSql.ToString());
 		}
 
-		/*
+		
 		/// <summary>
 		/// 分页获取数据列表
 		/// </summary>
@@ -319,21 +348,34 @@ namespace Change.DAL
 			SqlParameter[] parameters = {
 					new SqlParameter("@tblName", SqlDbType.VarChar, 255),
 					new SqlParameter("@fldName", SqlDbType.VarChar, 255),
-					new SqlParameter("@PageSize", SqlDbType.Int),
+                    new SqlParameter("@OrderfldName", SqlDbType.VarChar, 255),
+                    new SqlParameter("@StatfldName", SqlDbType.VarChar, 255),
+                    new SqlParameter("@PageSize", SqlDbType.Int),
 					new SqlParameter("@PageIndex", SqlDbType.Int),
 					new SqlParameter("@IsReCount", SqlDbType.Bit),
 					new SqlParameter("@OrderType", SqlDbType.Bit),
 					new SqlParameter("@strWhere", SqlDbType.VarChar,1000),
-					};
+                    //@tblName varchar(255), -- 表名
+                    //@fldName varchar(255), -- 显示字段名
+                    //@OrderfldName varchar(255), -- 排序字段名
+                    //@StatfldName varchar(255), -- 统计字段名
+                    //@PageSize int = 10, -- 页尺寸
+                    //@PageIndex int = 1, -- 页码
+                    //@IsReCount bit = 0, -- 返回记录总数, 非 0 值则返回
+                    //@OrderType bit = 0, -- 设置排序类型, 非 0 值则降序
+                    //@strWhere varchar(1000) = '' -- 查询条件 (注意: 不要加 where)
+                    };
 			parameters[0].Value = "tb_News";
-			parameters[1].Value = "NewsID";
-			parameters[2].Value = PageSize;
-			parameters[3].Value = PageIndex;
-			parameters[4].Value = 0;
-			parameters[5].Value = 0;
-			parameters[6].Value = strWhere;	
+			parameters[1].Value = "*";
+            parameters[2].Value = "NewsID";
+            parameters[3].Value = "*";
+            parameters[4].Value = PageSize;
+			parameters[5].Value = PageIndex;
+			parameters[6].Value = 1;
+			parameters[7].Value = 0;
+			parameters[8].Value = strWhere;	
 			return DbHelperSQL.RunProcedure("UP_GetRecordByPage",parameters,"ds");
-		}*/
+		}
 
 		#endregion  BasicMethod
 		#region  ExtensionMethod

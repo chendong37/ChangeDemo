@@ -586,7 +586,7 @@
 .Inside_pages .right_style .content_style .Add_shop_style .New_Shop_btn{ height:30px; width:80px; line-height:30px; font-size:14px;text-align:center;display:block; color:#666; border:1px solid #ddd;}
 .Inside_pages .left_style{ width:180px; float:left; margin-top:20px; margin-right:20px;}
 .Inside_pages .right_style{ width:1200px; float:left; margin-top:20px;}
-.Inside_pages .right_style .content_style{ margin-bottom:50px;}
+.Inside_pages .right_style .content_style{ margin-bottom:10px;}
 .Inside_pages .left_style .menu_style{ border:1px solid #ddd;}
 .Inside_pages .left_style .menu_style li{ border-bottom:1px dashed #ddd; height:40px; line-height:40px; font-size:16px}
 .Inside_pages .left_style .menu_style li.on{ background:#90b830;}
@@ -707,21 +707,21 @@ a.Next_btn{
 	border:1px solid #d4d4d4; 
 	float:left;
 	margin-right:10px;
-} 
-.link-btn{
-	float:left;
-	width: 85px; 
-	height: 32px; 
-	display: inline-block; 
-	line-height: 32px; 
-	text-align: center; 
-	vertical-align: middle; 
-	background: url('../images/Complex_img.png') left -33px; 
-	color: #fff; 
-	text-decoration: none;
-	position:absolute;
-	left:325px;
-	top:0px;
+}
+.link-btn {
+    float: left;
+    width: 85px;
+    height: 32px;
+    display: inline-block;
+    line-height: 32px;
+    text-align: center;
+    vertical-align: middle;
+    background: url('../images/Complex_img.png') left -33px;
+    color: #fff !important;
+    text-decoration: none;
+    position: absolute;
+    left: 325px;
+    top: 0px;
 } 
 .file-uploader-wrap{ position: relative; height: 32px; } 
 .file-uploader-wrap-fake{ 
@@ -808,7 +808,7 @@ a.Next_btn{
 <<<<<<< .mine
 .add_Bulletin .add_shops_style .cancel_btn:hover{ background-color: #999}
 /**************************商品专区样式属性***************************/
-.Products_area_style{ margin:20px 0px;}
+/*.Products_area_style{ margin:20px 0px;}*/
 .Products_area_style .Add_product_style{ height:30px; line-height:30px; padding:10px 0px; border-bottom:1px dashed #ddd;}
 .Products_area_style .Add_product_style .Add_btn{    
     font-size:14px;
@@ -839,9 +839,18 @@ a.Next_btn{
 .Products_list_style table{width:100%; margin:20px 0px;}
 .Products_list_style table .title{ text-align:center; height:30px; background-color:#ededed; font-size:16px}
 .Products_list_style table .checkbox_style{ width:50px;}
-.Products_list_style table .title_name{ width:450px}
+.Products_list_style table .title_name{ width:350px}
 .Products_list_style table .inventory{ width:100px;}
-.Products_list_style table .status{ width:100px;}
+    .Products_list_style table .news_time {
+        width: 200px;
+    }
+    .Products_list_style table .news_img {
+        width: 100px;
+    }
+
+.Products_list_style table .status {
+    width: 100px;
+}
 .Products_list_style table .operating{ width:300px;}
 .Products_list_style table td{ border:1px solid #ddd; text-align:center; padding:10px 0px}
 .Products_list_style table td.operating_btn  .inventory_style{ display:none; position: absolute; background:#FFF; width:299px; height:50px; z-index:11; left:0px; top:0px;}
@@ -863,7 +872,8 @@ a.Next_btn{
 	line-height:30px;
 	text-align:center; 
 	display:block; 
-	width:60px; 	
+	/*width:60px;*/ 	
+    padding:0 10px;
 	-webkit-border-radius:3px;
 	-moz-border-radius:3px;
 	border-radius:3px;
@@ -1110,7 +1120,7 @@ a.Next_btn{
 .Freight_template table.Case_list .label_name{}
 .Freight_template table.Case_list.confirm_yunfei .label_name{ background-color:#ededed}
 /****************添加运费模板样式属性****************/
-.add_yfmb_style{ padding:20px;}
+.add_yfmb_style{ padding:20px 200px;}
 .add_yfmb_style .add_template_style li{ margin-bottom:15px;}
 .add_yfmb_style .add_template_style li  select,
 .add_yfmb_style .add_template_style li .addtext_name{ height:30px; line-height:30px; padding:0px 10px; border:1px solid #ddd;}
@@ -1132,7 +1142,13 @@ a.Next_btn{
 	color:#ffffff; 	
 	cursor:pointer;
 }
-.add_yfmb_style .quxiao_btn{border:1px solid #ddd;color:#666;}
+.add_yfmb_style .quxiao_btn {
+    border: 1px solid #ddd;
+    color: #666;
+    display: inline-block ;
+    line-height: 40px;
+    padding: 0 6px;
+}
 /*****************************收款账户样式属性***************************/
 .Account_style{ min-height:530px;}
 .Account_style .Account_prompt{ border:1px solid #FC9; margin-top:20px; background-color:#FFEED5; font-size:14px; color:#F60; text-align:center; padding:5px;}
@@ -1351,3 +1367,8 @@ margin-top:65px;
 .Message_content .bd .system_info li i{ color:#F60; margin-right:5px;}
 #Message_content .Appraisal_style{ margin:0px; padding:0px}
 #Message_content .Appraisal_style .Appraisal_list table{}
+
+.copyright {
+    position: absolute;
+    width: 100%;
+}

@@ -110,10 +110,21 @@ namespace Change.BLL
 		{
 			return dal.GetList(Top,strWhere,filedOrder);
 		}
-		/// <summary>
-		/// 获得数据列表
-		/// </summary>
-		public List<Change.Model.NewsModel> GetModelList(string strWhere)
+        /// <summary>
+        /// 更新状态
+        /// </summary>
+        /// <param name="newsId"></param>
+        /// <param name="status"></param>
+        /// <returns></returns>
+        public bool UpdateNewsStatus(int newsId, int status)
+        {
+            return dal.UpdateNewsStatus(newsId, status);
+        }
+
+        /// <summary>
+        /// 获得数据列表
+        /// </summary>
+        public List<Change.Model.NewsModel> GetModelList(string strWhere)
 		{
 			DataSet ds = dal.GetList(strWhere);
 			return DataTableToList(ds.Tables[0]);
@@ -162,18 +173,18 @@ namespace Change.BLL
 		{
 			return dal.GetListByPage( strWhere,  orderby,  startIndex,  endIndex);
 		}
-		/// <summary>
-		/// 分页获取数据列表
-		/// </summary>
-		//public DataSet GetList(int PageSize,int PageIndex,string strWhere)
-		//{
-			//return dal.GetList(PageSize,PageIndex,strWhere);
-		//}
+        /// <summary>
+        /// 分页获取数据列表
+        /// </summary>
+        public DataSet GetList(int PageSize, int PageIndex, string strWhere)
+        {
+            return dal.GetList(PageSize, PageIndex, strWhere);
+        }
 
-		#endregion  BasicMethod
-		#region  ExtensionMethod
+        #endregion  BasicMethod
+        #region  ExtensionMethod
 
-		#endregion  ExtensionMethod
-	}
+        #endregion  ExtensionMethod
+    }
 }
 
