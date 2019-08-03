@@ -76,15 +76,28 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Admin\AddNews.aspx" />
+    <Content Include="Admin\AddProduct.aspx" />
+    <Content Include="Admin\AddUsers.aspx" />
+    <Content Include="Admin\CategoryChild.aspx" />
+    <Content Include="Admin\DeleteCategory.aspx" />
     <Content Include="Admin\DeleteNews.aspx" />
+    <Content Include="Admin\DeleteProduct.aspx" />
+    <Content Include="Admin\DeleteUsers.aspx" />
     <Content Include="Admin\Login.aspx" />
     <Content Include="Admin\Category.aspx" />
+    <Content Include="Admin\loginout.aspx" />
+    <Content Include="Admin\ModifyCategory.aspx" />
     <Content Include="Admin\ModifyNews.aspx" />
+    <Content Include="Admin\ModifyProduct.aspx" />
+    <Content Include="Admin\ModifyUsers.aspx" />
     <Content Include="Admin\NewsDetails.aspx" />
     <Content Include="Admin\Product.aspx" />
     <Content Include="Admin\Orders.aspx" />
+    <Content Include="Admin\ProductDetails.aspx" />
+    <Content Include="Admin\ProductPhoto.aspx" />
     <Content Include="Admin\Users.aspx" />
     <Content Include="Admin\News.aspx" />
+    <Content Include="Admin\UsersDetails.aspx" />
     <Content Include="Content\AD\ad-1.jpg" />
     <Content Include="Content\AD\ad-2.jpg" />
     <Content Include="Content\css\base.css" />
@@ -407,12 +420,54 @@
     <Compile Include="Admin\AddNews.aspx.designer.cs">
       <DependentUpon>AddNews.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Admin\AddProduct.aspx.cs">
+      <DependentUpon>AddProduct.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AddProduct.aspx.designer.cs">
+      <DependentUpon>AddProduct.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AddUsers.aspx.cs">
+      <DependentUpon>AddUsers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AddUsers.aspx.designer.cs">
+      <DependentUpon>AddUsers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\CategoryChild.aspx.cs">
+      <DependentUpon>CategoryChild.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\CategoryChild.aspx.designer.cs">
+      <DependentUpon>CategoryChild.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\DeleteCategory.aspx.cs">
+      <DependentUpon>DeleteCategory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\DeleteCategory.aspx.designer.cs">
+      <DependentUpon>DeleteCategory.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Admin\DeleteNews.aspx.cs">
       <DependentUpon>DeleteNews.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Admin\DeleteNews.aspx.designer.cs">
       <DependentUpon>DeleteNews.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\DeleteProduct.aspx.cs">
+      <DependentUpon>DeleteProduct.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\DeleteProduct.aspx.designer.cs">
+      <DependentUpon>DeleteProduct.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\DeleteUsers.aspx.cs">
+      <DependentUpon>DeleteUsers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\DeleteUsers.aspx.designer.cs">
+      <DependentUpon>DeleteUsers.aspx</DependentUpon>
     </Compile>
     <Compile Include="Admin\Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
@@ -428,12 +483,40 @@
     <Compile Include="Admin\Category.aspx.designer.cs">
       <DependentUpon>Category.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Admin\loginout.aspx.cs">
+      <DependentUpon>loginout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\loginout.aspx.designer.cs">
+      <DependentUpon>loginout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ModifyCategory.aspx.cs">
+      <DependentUpon>ModifyCategory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ModifyCategory.aspx.designer.cs">
+      <DependentUpon>ModifyCategory.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Admin\ModifyNews.aspx.cs">
       <DependentUpon>ModifyNews.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Admin\ModifyNews.aspx.designer.cs">
       <DependentUpon>ModifyNews.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ModifyProduct.aspx.cs">
+      <DependentUpon>ModifyProduct.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ModifyProduct.aspx.designer.cs">
+      <DependentUpon>ModifyProduct.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ModifyUsers.aspx.cs">
+      <DependentUpon>ModifyUsers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ModifyUsers.aspx.designer.cs">
+      <DependentUpon>ModifyUsers.aspx</DependentUpon>
     </Compile>
     <Compile Include="Admin\NewsDetails.aspx.cs">
       <DependentUpon>NewsDetails.aspx</DependentUpon>
@@ -456,6 +539,20 @@
     <Compile Include="Admin\Orders.aspx.designer.cs">
       <DependentUpon>Orders.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Admin\ProductDetails.aspx.cs">
+      <DependentUpon>ProductDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ProductDetails.aspx.designer.cs">
+      <DependentUpon>ProductDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ProductPhoto.aspx.cs">
+      <DependentUpon>ProductPhoto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ProductPhoto.aspx.designer.cs">
+      <DependentUpon>ProductPhoto.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Admin\Users.aspx.cs">
       <DependentUpon>Users.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -469,6 +566,13 @@
     </Compile>
     <Compile Include="Admin\News.aspx.designer.cs">
       <DependentUpon>News.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\UsersDetails.aspx.cs">
+      <DependentUpon>UsersDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\UsersDetails.aspx.designer.cs">
+      <DependentUpon>UsersDetails.aspx</DependentUpon>
     </Compile>
     <Compile Include="Home.aspx.cs">
       <DependentUpon>Home.aspx</DependentUpon>

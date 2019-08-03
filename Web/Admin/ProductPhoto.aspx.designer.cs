@@ -10,24 +10,33 @@
 namespace Change.Web.Admin {
     
     
-    public partial class Users {
+    public partial class ProductPhoto {
         
         /// <summary>
-        /// ProductRepeater1 控件。
+        /// txtPhotoUrl 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Repeater ProductRepeater1;
+        protected global::System.Web.UI.WebControls.FileUpload txtPhotoUrl;
         
         /// <summary>
-        /// DropDownList1 控件。
+        /// btn_add 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList DropDownList1;
+        protected global::System.Web.UI.WebControls.Button btn_add;
+        
+        /// <summary>
+        /// Repeater1 控件。
+        /// </summary>
+        /// <remarks>
+        /// 自动生成的字段。
+        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Repeater Repeater1;
     }
 }

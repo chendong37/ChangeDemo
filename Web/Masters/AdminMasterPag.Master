@@ -31,7 +31,7 @@
 
                 </asp:ContentPlaceHolder>
                 <li><a href="../home.aspx">网站首页</a></li>
-                <li><a href="#">退出后台</a></li>
+                <li><a href="../Admin/loginout.aspx">退出后台</a></li>
                 <li class="info">
                     <asp:Label ID="adminUserName" runat="server" Text="Label"></asp:Label>：欢迎您！</li>
                 

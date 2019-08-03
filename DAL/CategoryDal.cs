@@ -274,30 +274,34 @@ namespace Change.DAL
 			return DbHelperSQL.Query(strSql.ToString());
 		}
 
-		/*
+		
 		/// <summary>
 		/// 分页获取数据列表
 		/// </summary>
 		public DataSet GetList(int PageSize,int PageIndex,string strWhere)
 		{
 			SqlParameter[] parameters = {
-					new SqlParameter("@tblName", SqlDbType.VarChar, 255),
-					new SqlParameter("@fldName", SqlDbType.VarChar, 255),
-					new SqlParameter("@PageSize", SqlDbType.Int),
-					new SqlParameter("@PageIndex", SqlDbType.Int),
-					new SqlParameter("@IsReCount", SqlDbType.Bit),
-					new SqlParameter("@OrderType", SqlDbType.Bit),
-					new SqlParameter("@strWhere", SqlDbType.VarChar,1000),
-					};
-			parameters[0].Value = "tb_Category";
-			parameters[1].Value = "CateId";
-			parameters[2].Value = PageSize;
-			parameters[3].Value = PageIndex;
-			parameters[4].Value = 0;
-			parameters[5].Value = 0;
-			parameters[6].Value = strWhere;	
-			return DbHelperSQL.RunProcedure("UP_GetRecordByPage",parameters,"ds");
-		}*/
+                    new SqlParameter("@tblName", SqlDbType.VarChar, 255),
+                    new SqlParameter("@fldName", SqlDbType.VarChar, 255),
+                    new SqlParameter("@OrderfldName", SqlDbType.VarChar, 255),
+                    new SqlParameter("@StatfldName", SqlDbType.VarChar, 255),
+                    new SqlParameter("@PageSize", SqlDbType.Int),
+                    new SqlParameter("@PageIndex", SqlDbType.Int),
+                    new SqlParameter("@IsReCount", SqlDbType.Bit),
+                    new SqlParameter("@OrderType", SqlDbType.Bit),
+                    new SqlParameter("@strWhere", SqlDbType.VarChar,1000),
+                       };
+            parameters[0].Value = "tb_Category";
+            parameters[1].Value = "*";
+            parameters[2].Value = "CateId";
+            parameters[3].Value = "*";
+            parameters[4].Value = PageSize;
+            parameters[5].Value = PageIndex;
+            parameters[6].Value = 1;
+            parameters[7].Value = 0;
+            parameters[8].Value = strWhere;
+            return DbHelperSQL.RunProcedure("UP_GetRecordByPage",parameters,"ds");
+		}
 
 		#endregion  BasicMethod
 		#region  ExtensionMethod

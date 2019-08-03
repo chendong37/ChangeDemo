@@ -13,8 +13,8 @@ namespace Change.Web
         {
             if (Session["CurrentUser"] != null)
                 btnToReg.Text = (Session["CurrentUser"] as UsersModel).Nick;
-            else
-                Response.Redirect("login.aspx");
+            //else
+            //    Response.Redirect("login.aspx");
         }
  
         protected void Unnamed1_Click(object sender, EventArgs e)

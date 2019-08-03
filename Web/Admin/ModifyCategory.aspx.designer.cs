@@ -10,60 +10,51 @@
 namespace Change.Web.Admin {
     
     
-    public partial class Category {
+    public partial class ModifyCategory {
         
         /// <summary>
-        /// AddCategory 控件。
+        /// CatePanel1 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button AddCategory;
+        protected global::System.Web.UI.WebControls.Panel CatePanel1;
         
         /// <summary>
-        /// NewCateName 控件。
+        /// CateName 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox NewCateName;
+        protected global::System.Web.UI.WebControls.TextBox CateName;
         
         /// <summary>
-        /// btnCancle 控件。
+        /// ParentId 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnCancle;
+        protected global::System.Web.UI.WebControls.DropDownList ParentId;
         
         /// <summary>
-        /// btn_addCateName 控件。
+        /// btn_Update 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btn_addCateName;
+        protected global::System.Web.UI.WebControls.Button btn_Update;
         
         /// <summary>
-        /// CategoryRepeater1 控件。
+        /// btn_Cancel 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Repeater CategoryRepeater1;
-        
-        /// <summary>
-        /// DropDownList1 控件。
-        /// </summary>
-        /// <remarks>
-        /// 自动生成的字段。
-        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList DropDownList1;
+        protected global::System.Web.UI.WebControls.Button btn_Cancel;
     }
 }

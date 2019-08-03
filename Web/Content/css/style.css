@@ -1372,3 +1372,58 @@ margin-top:65px;
     position: absolute;
     width: 100%;
 }
+
+.addtext_catename {
+    height: 30px;
+    line-height: 30px;
+    padding: 0px 10px;
+    border: 1px solid #ddd;
+    width:150px;
+}
+.Products_list_style table .catename {
+    width:150px;
+}
+
+
+div.addDiv {
+    width: 400px;
+    margin: 0px auto;
+    border-color: #faebcc;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.05);
+    box-shadow: 0 1px 1px rgba(0,0,0,.05);
+}
+
+div.editDiv {
+    width: 400px;
+    margin: 0px auto;
+}
+
+table.addTable {
+    width: 100%;
+}
+
+table.editTable {
+    width: 100%;
+}
+
+    table.editTable td {
+        padding: 5px;
+    }
+
+table.addTable td {
+    padding: 5px;
+    font-size: 14px;
+}
+.panel-warning > .panel-heading {
+    color: #8a6d3b;
+    background-color: #fcf8e3;
+    border-color: #faebcc;
+}
+.panel-heading {
+    padding: 10px 15px;
+    border-bottom: 1px solid transparent;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
