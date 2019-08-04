@@ -242,9 +242,11 @@ namespace Change.DAL
 		public DataSet GetList(string strWhere)
 		{
 			StringBuilder strSql=new StringBuilder();
-			strSql.Append("select OrdersID,Orderdate,UserId,Total,DeliveryID,DeliveryDate,States,Remark ");
+			strSql.Append("select UserName,Consignee,OrdersID,Orderdate,Total,DeliveryDate,States,Remark ");
 			strSql.Append(" FROM tb_Orders ");
-			if(strWhere.Trim()!="")
+            strSql.Append(" join tb_Delivery on tb_Orders.DeliveryID=tb_Delivery.DeliveryID");
+            strSql.Append(" join tb_Users on tb_Orders.UserId=tb_Users.UserId");
+            if (strWhere.Trim()!="")
 			{
 				strSql.Append(" where "+strWhere);
 			}

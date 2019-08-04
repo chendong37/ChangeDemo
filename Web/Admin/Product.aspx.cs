@@ -47,5 +47,9 @@ namespace Change.Web.Admin
 
             //GetList(int PageSize, int PageIndex, string strWhere)
         }
+        public string GetCateName(object cateId) {
+            new CategoryBll().GetModel((int)cateId);
+            return new CategoryBll().GetModel((int)cateId).CateName;
+        }
     }
 }

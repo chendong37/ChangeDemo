@@ -25,7 +25,7 @@
                                     <td class="inventory">市场价格</td>
                                     <td class="news_time">本站价格</td>
                                     <td class="status">商品库存</td>
-                                    <%--<td class="status">分类名</td>--%>
+                                    <td class="status">分类名</td>
                                     <td class="operating">操作</td>
                                 </tr>
                             </thead>
@@ -37,7 +37,7 @@
                                             <td><%# Eval("MarketPrice") %></td>
                                             <td><%# Eval("Price") %></td>
                                             <td><%#  Eval("Stock") %></td>
-                                            <%--<td><%#  Eval("CateId") %></td>--%>
+                                            <td><%# GetCateName(Eval("CateId")) %></td>
                                             <td class="operating_btn relative">
                                                 <a href="ModifyProduct.aspx?ProductId=<%#  Eval("ProductId") %>" class="fzxx_btn">编辑</a>
                                                 <a href="ProductDetails.aspx?ProductId=<%#  Eval("ProductId") %>" class="pjgl_btn">详情</a>

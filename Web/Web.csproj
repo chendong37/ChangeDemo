@@ -91,6 +91,7 @@
     <Content Include="Admin\ModifyProduct.aspx" />
     <Content Include="Admin\ModifyUsers.aspx" />
     <Content Include="Admin\NewsDetails.aspx" />
+    <Content Include="Admin\OrdersDetail.aspx" />
     <Content Include="Admin\Product.aspx" />
     <Content Include="Admin\Orders.aspx" />
     <Content Include="Admin\ProductDetails.aspx" />
@@ -524,6 +525,13 @@
     </Compile>
     <Compile Include="Admin\NewsDetails.aspx.designer.cs">
       <DependentUpon>NewsDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\OrdersDetail.aspx.cs">
+      <DependentUpon>OrdersDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\OrdersDetail.aspx.designer.cs">
+      <DependentUpon>OrdersDetail.aspx</DependentUpon>
     </Compile>
     <Compile Include="Admin\Product.aspx.cs">
       <DependentUpon>Product.aspx</DependentUpon>
